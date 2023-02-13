@@ -3,35 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="Width-device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Assignment</title> 
-        <link href="https"
     </head>
     <body>
         <h1>Farewell Party Survey Form</h1>
 
         <form action=""method=""enctype"">
-            <label for="Username">Name</label>
-            <input type="text" id="Name" name="Name" placeholder="Enter your name"> <br></br> 
-            <label for="Usermail">Email</label>
-            <input type="Email" id=Email" name="Usermail" placeholder="Enter email address"> <br></br>
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name"> <br></br> 
+            <label for="usermail">Email</label>
+            <input type="email" id=usermail" name="usermail" placeholder="Enter email address"> <br></br>
             <label for="Age">Age</label>
-            <input type="Age" id="Age" name="Age" placeholder="Enter your age"> <br></br>
-            <label for="Description">What option best describes you</label>
-            <input type="Descripton" id="Description" name="Description" placeholder="Student"> <br></br>
-            <label for="Will you attend the party?">Will you attend the party?</label> 
-            <input type="radio"name=" Options" id="Yes" Value="Yes"> <label for="Yes">Yes</label><br></br> 
-            <input type="radio" name="Options" id="No"  Value="No"> <label for="No">No</label> <br></br>
-            <label for="What did you like about the program?">What did you like about the program?</label>
-            <ul>Training</Ul>
-            <Ul>The learning sessions from Industry Experts</Ul>
-            <Ul>Community Meetups</Ul>
-            <Ul>Switching to Hybrids Mode</Ul>
-            <Ul>Food, Office etc.</Ul>
+            <input type="number" id="Age" name="Age" placeholder="Enter your age" min="1"> <br></br>
+            <label for="description">What option best describes you</label>
+            <select name="description" id="description">
+                <option value="student">student</option>
+                <option value="civil servant">civil servant</option>
+                <option value="trader">trader</option>
+                <option value="artisan">artisan</option>
+            </select><br><br> 
+            <label for="attendance">Will you attend the party?</label> <br><br>
+            <input type="radio"name="attendance" id="yes" Value="Yes"> <label for="yes">Yes</label>
+            <input type="radio" name="attendance" id="no"  Value="No"> <label for="no">No</label> <br></br>
+            <label for="programme">What did you like about the program?</label>
+            <input type="checkbox" name="programme" id="training" value="training"> <label for="training">Training</label><br><br>
+            <input type="checkbox" name="programme" id="experts" value="experts"> <label for="experts">The learning sessions from Industry Experts</label><br><br>
+            <input type="checkbox" name="programme" id="community" value="community"> <label for="community">Community Meetups</label><br><br>
+            <input type="checkbox" name="programme" id="hybrid" value="hybrid"> <label for="hybrid">Switching to Hybrids Mode</label><br><br>
+            <input type="checkbox" name="programme" id="food" value="food"> <label for="food">Food, Office etc.</label><br><br>
             <label for="suggestion">Any comment or suggestion</label>
-            <textarea name="suggestion" id="Suggestion" cols="20" rows="2"></textarea>
-            <input type="reset" value="reset">
-            <input type="Submit" value="Submit">
+            <textarea name="suggestion" id="suggestion" cols="20" rows="2"></textarea> <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
         </form>
     </body>
     </html>
