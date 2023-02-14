@@ -1,0 +1,12 @@
+    p{
+        background-color: orangered;
+        color: limegreen;
+        padding: 15px;
+        font-size: 20px;
+        border: 2px whitesmoke;
+    }
+
+    span {
+        color: purple;
+        background-color: yellow;
+    }
